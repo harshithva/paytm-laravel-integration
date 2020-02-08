@@ -62,7 +62,7 @@ class OrderController extends Controller
 		$paramList = array();
 
 		// Create an array having all required parameters for creating checksum.
-		$paramList["MID"] = 'jHjsjr61654225673033';
+		$paramList["MID"] = 'YourID';
 		$paramList["ORDER_ID"] = $order_id;
 		$paramList["CUST_ID"] = $order_id;
 		$paramList["INDUSTRY_TYPE_ID"] = 'Retail';
@@ -70,7 +70,7 @@ class OrderController extends Controller
 		$paramList["TXN_AMOUNT"] = $amount;
 		$paramList["WEBSITE"] = 'WEBSTAGING';
 		$paramList["CALLBACK_URL"] = url( '/paytm-callback' );
-		$paytm_merchant_key = '9nj3IlLdbnSSqYRI';
+		$paytm_merchant_key = 'YourKey';
 
 		//Here checksum string will return by getChecksumFromArray() function.
 		$checkSum = getChecksumFromArray( $paramList, $paytm_merchant_key );
@@ -380,9 +380,9 @@ class OrderController extends Controller
 
     public function getConfigPaytmSettings() {
         define('PAYTM_ENVIRONMENT', 'TEST'); // PROD
-define('PAYTM_MERCHANT_KEY', '9nj3IlLdbnSSqYRI'); //Change this constant's value with Merchant key received from Paytm.
-define('PAYTM_MERCHANT_MID', 'jHjsjr61654225673033'); //Change this constant's value with MID (Merchant ID) received from Paytm.
-define('PAYTM_MERCHANT_WEBSITE', 'WEBSTAGING'); //Change this constant's value with Website name received from Paytm.
+define('PAYTM_MERCHANT_KEY', 'YourKey'); //Change this constant's value with Merchant key received from Paytm.
+define('PAYTM_MERCHANT_MID', 'YourID'); //Change this constant's value with MID (Merchant ID) received from Paytm.
+define('PAYTM_MERCHANT_WEBSITE', 'MerchantSiteHere'); //Change this constant's value with Website name received from Paytm.
 
 $PAYTM_STATUS_QUERY_NEW_URL='https://securegw-stage.paytm.in/merchant-status/getTxnStatus';
 $PAYTM_TXN_URL='https://securegw-stage.paytm.in/theia/processTransaction';
@@ -414,4 +414,3 @@ define('PAYTM_TXN_URL', $PAYTM_TXN_URL);
 	}
 }
 
-// testing mov: 7777777777 489871

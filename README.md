@@ -4,21 +4,32 @@
 This is paytm integration for laravel.
 link to create order is available in routes/web.php
 
-Install Dependencies
+#How to get this project working
+
+# Install Dependencies
 composer install
 
-Run Migrations
+# Run Migrations
 php artisan migrate
 
-Add virtual host if using Apache
-If you get an error about an encryption key
+# Add virtual host if using Apache
+
+# If you get an error about an encryption key
 php artisan key:generate
 
-Author
-Harshith VA VAwebsites
 
-Version
+## App Info
+
+### Author
+
+Harshith VA
+[VAwebsites](http://www.vawebsites.in)
+
+### Version
+
 1.0.0
 
-License
+### License
+
 This project is licensed under the MIT License
+

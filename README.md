@@ -1,22 +1,22 @@
 
 
-## Paytm Laravel integration
+# Paytm Laravel integration
 This is paytm integration for laravel.
 link to create order is available in routes/web.php
 
-#How to get this project working
+## How to get this project working
 
-# Install Dependencies
+### Install Dependencies
 composer install
 
-# Run Migrations
+### Run Migrations
 php artisan migrate
 
-# Add virtual host if using Apache
+### Add virtual host if using Apache
 
-# If you get an error about an encryption key
+### If you get an error about an encryption key
+
 php artisan key:generate
-
 
 ## App Info
 

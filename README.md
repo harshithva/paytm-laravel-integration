@@ -1,6 +1,6 @@
 
 
-# Paytm Laravel integration
+# Paytm Laravel integration Example
 This is paytm integration for laravel.
 link to create order is available in routes/web.php
 
